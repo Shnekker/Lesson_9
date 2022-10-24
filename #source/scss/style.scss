@@ -1,0 +1,70 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap');
+
+
+@font-face {
+	font-family: "LavishlyYours";
+	src: url("../fonts/LavishlyYours-Regular.woff2") format("woff2"), url("../fonts/LavishlyYours-Regular.woff") format("woff");
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+//--------------------------------------------------------------------------------------------------------------------------------------------
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+//--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+body{
+	
+	font-family:"Caveat";
+	color: #000000;
+	font-weight: 400;
+	background: #ffffff;
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+	background: linear-gradient(to bottom,  #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 );
+
+
+	
+}
+
+.wrapper{
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+}
+
+[class*="__container"]{
+		max-width: 1030px;
+		padding: 0px 15px;
+		margin: 0 auto;
+}
+
+//============================================
+
+
+.page {
+	background: rgb(167,207,223);
+background: -moz-linear-gradient(left,  rgba(167,207,223,1) 0%, rgba(35,83,138,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+background: linear-gradient(to right,  rgba(167,207,223,1) 0%,rgba(35,83,138,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=1 );
+
+	&__pictures {
+		padding: 50px;
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
